@@ -6,8 +6,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.edutrack.componentes.HomeScreen
-import com.example.edutrack.componentes.Login
-import com.example.edutrack.componentes.Materias
+import com.example.edutrack.componentes.LoginScreen
+import com.example.edutrack.componentes.MateriasScreen
 
 @Composable
 fun NavigationWrapper()
@@ -18,7 +18,7 @@ fun NavigationWrapper()
     {
         composable<Login>
         {
-            Login{
+            LoginScreen{
                 navControlador.navigate(HomeScreen)
             }
         }
@@ -33,7 +33,7 @@ fun NavigationWrapper()
 
         composable<Materias>
         {
-            Materias(
+            MateriasScreen(
                 navigateToHomeScreen = {navControlador.navigate(HomeScreen) },
                 navigateToCalendar = { navControlador.navigate(Calendar) },
                 navigateToMaterias = { navControlador.navigate(Materias) },
