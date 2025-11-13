@@ -162,7 +162,7 @@ fun MateriasScreen(
             floatingActionButton = {
                 FloatingActionButton(
                     onClick = {
-                        Toast.makeText(context, "Agregar nueva materia", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "Próximamente", Toast.LENGTH_SHORT).show()
                     },
                     containerColor = Color(0xFF00C896),
                     contentColor = Color.White,
